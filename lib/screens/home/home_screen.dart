@@ -4,9 +4,9 @@ import 'package:sound_recorder/screens/widets/audio_list_tile.dart';
 import 'package:sound_recorder/screens/widets/pulsing_animation.dart';
 import 'package:sound_recorder/utils/path.dart';
 
-class AudioRec extends StatefulWidget {
+class Home extends StatefulWidget {
   @override
-  _AudioRecState createState() => _AudioRecState();
+  _HomeState createState() => _HomeState();
 }
 
 enum AudioState {
@@ -17,8 +17,7 @@ enum AudioState {
   isRecordingPaused,
 }
 
-class _AudioRecState extends State<AudioRec>
-    with SingleTickerProviderStateMixin {
+class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   FlutterAudioRecorder _recorder;
   RecordingStatus _currentStatus = RecordingStatus.Unset;
 
