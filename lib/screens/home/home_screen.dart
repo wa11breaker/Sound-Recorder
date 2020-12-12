@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_audio_recorder/flutter_audio_recorder.dart';
-import 'package:sound_recorder/screens/widets/audio_list_tile.dart';
-import 'package:sound_recorder/screens/widets/pulsing_animation.dart';
+import 'package:sound_recorder/screens/home/widets/audio_list_tile.dart';
+import 'package:sound_recorder/screens/home/widets/pulsing_animation.dart';
 import 'package:sound_recorder/utils/path.dart';
-
-class Home extends StatefulWidget {
-  @override
-  _HomeState createState() => _HomeState();
-}
 
 enum AudioState {
   isPlaying,
@@ -15,6 +10,11 @@ enum AudioState {
   isStopped,
   isRecording,
   isRecordingPaused,
+}
+
+class Home extends StatefulWidget {
+  @override
+  _HomeState createState() => _HomeState();
 }
 
 class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
